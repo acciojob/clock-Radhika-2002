@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const ampm = hours >= 12 ? "PM" : "AM";
 
         hours = hours % 12 || 12; // Convert 24-hour format to 12-hour format
-        const formattedTime = `${month}/${day}/${year}, ${hours}:${minutes}:${seconds} ${ampm}`;
+        const formattedTime = `${month}/${day}/${year}, ${hours}:${minutes}:${seconds} ${ampm}`
         timerElement.textContent = formattedTime;
     }
 
